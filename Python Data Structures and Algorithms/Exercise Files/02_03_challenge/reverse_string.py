@@ -1,7 +1,6 @@
 """
 Python Data Structures - A Game-Based Approach
 Stack challenge
-Robin Andrews - https://compucademy.net/
 """
 
 import stack
