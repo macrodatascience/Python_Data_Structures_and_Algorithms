@@ -32,7 +32,8 @@ class Stack:
     def __str__(self):
         return str(self.items)
 
-
+    def __repr__(self):
+        return repr(self.items)
 # if this is the main file that is being executed then run the code below. otherwise only import the above class and its methods
 
 if __name__ == "__main__":
@@ -40,13 +41,15 @@ if __name__ == "__main__":
     s2 = Stack()
     print(s1, s2)
     print(s1.is_empty())
-    print(s1.push([1, 2, 3, 4]))
+    s1.push([1, 2, 3, 4])
     print(s1)
-    print(s1.push(90))
-    print(s1.push('abc'))
-    print(s1.push('{1,2,3}'))
+    s1.push(90)
+    s1.push('abc')
+    s1.push('{1,2,3}')
     print(s1)
     print(s1.pop())
     print(s1)
     print(s1.peek())
     print(s1.size())
+    print(str(s1))
+    print(repr(s1))
